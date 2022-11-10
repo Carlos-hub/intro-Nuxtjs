@@ -1,6 +1,6 @@
 <template lang="">
     <section class="">
-        <div id="sidebg" class="float-left container h-screen bg-[#3D9CF3] w-24   justify-center py-4 fixed block duration-700 overflow-hidden">
+        <div id="sidebg" class="sm:d-none float-left container h-screen bg-[#3D9CF3] w-24   justify-center py-4 fixed block duration-700 overflow-hidden">
 
             <div class="w-30 h-13  ml-7 pb-12">
                 <a to="" class="side-item">
@@ -62,7 +62,7 @@
 <style>
 
 .side-expanded {
-    width: 400px;
+    width: 60%;
 }
 .side-item {
     display: flex;
@@ -74,7 +74,7 @@
 }
 .side-expanded-button {
 
-    left: 300px;
+    left: 45%;
 }
 </style>
 <script>
