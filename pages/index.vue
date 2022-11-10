@@ -11,12 +11,13 @@
 </template>
 
 <script>
+import NewClient from '../components/newClient.vue';
 import Shortcut from '../components/Shortcut.vue';
 import Sidebar from '../components/Sidebar.vue';
 
 
 export default {
     name: "IndexPage",
-    components: { Sidebar, Shortcut }
+    components: { Sidebar, Shortcut, NewClient }
 }
 </script>

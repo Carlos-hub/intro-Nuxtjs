@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+    <div class="gg-lock">
         
     </div>
 </template>
@@ -8,6 +8,31 @@ export default {
     
 }
 </script>
-<style lang="">
-    
+<style lang="css">
+    .gg-lock {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 11px;
+    border: 2px solid;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom: transparent;
+    margin-top: -12px;
+}
+.gg-lock::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    left: -4px;
+    top: 9px
+}
 </style>
