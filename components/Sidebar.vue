@@ -9,43 +9,43 @@
                 </a>
                 
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 ease-linear duration-700  hover:bg-[#fff]">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 ease-linear duration-700  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/home.svg" alt="" srcset="" class="w-6 h-6">
-                    <p class="desc ml-14">Painel</p>
+                    <p class="desc ml-14 ">Painel</p>
                 </nuxt-link>
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] ease-linear duration-400 ">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400 ">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/user.svg" alt="" srcset="" class="w-6 h-6">
                     <p class="desc ml-14">Clientes</p>
                 </nuxt-link>
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/comment.svg" alt="" srcset="" class="w-6 h-6">
                     <p class="desc ml-14">Mensagens</p>
                 </nuxt-link>
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/interrogation.svg" alt="" srcset="" class="w-6 h-6">
                     <p class="desc ml-14">Ajuda</p>
                 </nuxt-link>
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/settings.svg" alt="" srcset="" class="w-6 h-6">
                     <p class="desc ml-14">Configurações</p>
                 </nuxt-link>
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/lock.svg" alt="" srcset="" class="w-6 h-6">
                     <p class="desc ml-14">Senha</p>
                 </nuxt-link>
             </div>
-            <div class="w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
                 <nuxt-link to="" class="side-item">
                     <img src="svg/sign-out-alt.svg" alt="" srcset="" class="w-6 h-6">
                     <p class="desc ml-14">Sair</p>
@@ -62,7 +62,7 @@
 <style>
 
 .side-expanded {
-    width: 60%;
+    width: 30%;
 }
 .side-item {
     display: flex;
@@ -72,9 +72,12 @@
 .side-item p {
     color: #fff;
 }
+.hoverbtn:hover p ,.side-item:hover p {
+    color: #3D9CF3;
+}
 .side-expanded-button {
 
-    left: 45%;
+    left: 25%;
 }
 </style>
 <script>
