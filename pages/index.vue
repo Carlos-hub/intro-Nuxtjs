@@ -26,7 +26,7 @@
         <ReportSingle name="PC Dell XPS-8940 Intel Core i7 10700" :value=2.00 payment="Pago" status="Entregue" />
         <ReportSingle name="PC Dell XPS-8940 Intel Core i7 10700" :value=2.00 payment="Pago" status="Processando" />
       </div>
-      <div class="flex">
+      <div class="flex responsiveclient">
         <div class="w-full rounded-xl shadow-md shadow-slate-400  p-4">
         <NewClient name="Carlos" number="(49) 99999-9999"/>
         <NewClient name="Teste" number="(49) 88888-9999"/>
@@ -49,10 +49,13 @@
     padding-right: 0;
   }
   .reportresponse{
-    width:80%;
+    width:fit-content;
     padding-left: 2px;
     padding-right: 2px;
-    margin-left: -15px;
+  }
+  .responsiveclient{
+    margin-left: 96px;
+    width:fit-content;
   }
 }
 
