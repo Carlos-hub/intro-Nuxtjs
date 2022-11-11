@@ -1,5 +1,5 @@
 <template lang="">
-        <div class="bg-[#FAFAFA] hover:bg-[#3D9CF3] justify-between grid space-x-5 grid-cols-8 place-items-center gap-4 p-2">
+        <div class="report bg-[#FAFAFA] hover:bg-[#3D9CF3] justify-between grid space-x-5 grid-cols-8 place-items-center gap-4 p-2">
             <p class="col-span-3">{{name}}</p>
             <p class="col-span-1">{{value}}</p>
             <p class="col-span-3">{{payment}}</p>
@@ -16,6 +16,16 @@
 .reportHover:hover{
     background-color: #3D9CF3;
     background-color: #FFF;
+}
+.report{
+    max-width: fit-content;
+    margin-left: 96px;
+}
+
+@media screen and (max-width: 700px;){
+    .report{
+        display: flex;
+    }
 }
 </style>
 

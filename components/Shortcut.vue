@@ -23,4 +23,12 @@ export default {
 .shortcut:hover p{
     color:#fff;
 }
+
+@media screen and (max-width:700px) {
+    .shortcut{
+        margin-top: 75px;
+        margin-left: 96px;
+        margin-bottom: 10px;
+    }
+}
 </style>

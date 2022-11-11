@@ -5,7 +5,7 @@
       <input class="p-2 w-2/3 bg-white-400 rounded-xl border-slate-400 border-2 border-solid border-slate-500 hover:ring-2 " placeholder="Hello everyone"/>
       <nuxt-link to="" class="right-2 w-12 h-12 bg-[#D9D9D9] rounded-full p-2 hover:bg-[#c9c9c9] items-center"><img src="svg/userBlack.svg" alt="" class=" w-9 h-9"></nuxt-link>
     </div>
-    <div class=" sm:justify-end sm:mt-[60px] md:flex md:space-x-4 md:my-10 md:ml-0 md:p-4">
+    <div class="sm:ml-10 sm:justify-end sm:mt-[60px] md:flex md:space-x-4 md:my-10 md:ml-0 md:p-4">
       <Shortcut title="Acessos" :number=50 image="/svg/vision.svg"/>
       <Shortcut title="Vendas" :number=15 image="/svg/bag.svg"/>
       <Shortcut title="Acessos" :number=60 image="/svg/manycomments.svg"/>
@@ -13,8 +13,8 @@
     </div>
     <div class="md:flex md:space-x-4 relative md:left-24 px-2 rounded-xl  z-[-2]">
       
-      <div class=" relative space-x-4 max-w-[800px] w-[60%] h--auto shadow-md shadow-slate-400 px-8">
-        <div class=" flex grid justify-between p-4 grid-cols-8 place-items-center gap-6">
+      <div class="reportresponse relative space-x-4 max-w-[800px] w-[60%] h--auto shadow-md shadow-slate-400 px-8">
+        <div class="title flex grid justify-between p-4 grid-cols-8 place-items-center gap-6">
             <p class="col-span-3">Nome</p>
             <p class="col-span-1">Valor</p>
             <p class="col-span-3">Pagamento</p>
@@ -39,6 +39,23 @@
   </div>
 </template>
 <style>
+@media screen and (max-width:700px) {
+  .reportresponse{
+    margin-left: 96px;
+  }
+  .title{
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .reportresponse{
+    width:90%;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+
  .gg-search {
  box-sizing: border-box;
  position: relative;
