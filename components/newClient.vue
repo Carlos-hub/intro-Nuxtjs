@@ -1,38 +1,34 @@
 <template lang="">
-    <div class="gg-lock">
-        
+    <div class="p-4 changebg rounded-xl hover:bg-[#3D9CF3]">
+    <div>
+        <div class="float-left bg-gray-400 rounded-full p-4">
+            <img src="/svg/userBlack.svg" alt="">
+        </div>
+        <div class="float-right pl-4">
+            <h4 class="justify-center">
+                {{name}}
+            </h4>
+            <p class="text-normal">
+                {{number}}
+            </p>
+        </div>
     </div>
+    <div class="clear-both"></div>
+</div>
 </template>
-<script>
-export default {
-    
+<style>
+.changebg:hover{
+    background-color: #3D9CF3;
 }
-</script>
-<style lang="css">
-    .gg-lock {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 12px;
-    height: 11px;
-    border: 2px solid;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom: transparent;
-    margin-top: -12px;
-}
-.gg-lock::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 16px;
-    height: 10px;
-    border-radius: 2px;
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 2px;
-    left: -4px;
-    top: 9px
+.changebg:hover p{
+    color: #FFF;
 }
 </style>
+<script>
+export default {
+    props:{
+        name:String,
+        number:String
+    }
+}
+</script>

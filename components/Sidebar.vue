@@ -1,73 +1,81 @@
 <template lang="">
     <section class="">
-        <div id="sidebg" class="sm:d-none float-left container h-screen bg-[#3D9CF3] w-24   justify-center py-4 fixed block duration-700 overflow-hidden">
+        <div id="sidebg" v-on:mousein="showMenu()" class="top-0 float-left h-screen bg-[#3D9CF3] w-20 py-4 fixed block duration-700 overflow-hidden items-center">
 
-            <div class="w-30 h-13  ml-7 pb-12">
-                <a to="" class="side-item">
+            <div class="w-30 h-13  ml-5 pb-12 ">
+                <a to="" class="sside-item">
                     <img src="svg/interactive.svg" alt="" srcset="" class="">
-                    <p class="desc ml-14">XCode Sistemas</p>
+                    <p class="ml-16">XCode Sistemas</p>
                 </a>
                 
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 ease-linear duration-700  hover:bg-[#fff] hover:rounded-l-full ">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full">
                 <nuxt-link to="" class="side-item">
                     <span class="gg-home"></span>
-                    <p class="desc ml-14 ">Painel</p>
+                    <p class="desc ml-16 ">Painel</p>
                 </nuxt-link>
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400 ">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
                     <span class="gg-user"></span>
-                    <p class="desc ml-14">Clientes</p>
+                    <p class="desc ml-16">Clientes</p>
                 </nuxt-link>
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
                     <span class="gg-comment"></span>
-                    <p class="desc ml-14">Mensagens</p>
+                    <p class="desc ml-16">Mensagens</p>
                 </nuxt-link>
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
-                    <img src="svg/interrogation.svg" alt="" srcset="" class="w-6 h-6">
-                    <p class="desc ml-14">Ajuda</p>
+                    <img src="svg/interrogation.svg" alt="" srcset="" class="w-6 h-6 ml-2">
+                    <p class="desc ml-16">Ajuda</p>
                 </nuxt-link>
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
-                    <img src="svg/settings.svg" alt="" srcset="" class="w-6 h-6">
-                    <p class="desc ml-14">Configurações</p>
+                    <img src="svg/settings.svg" alt="" srcset="" class="w-6 h-6 ml-2">
+                    <p class="desc ml-16">Configurações</p>
                 </nuxt-link>
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
                     <span class="gg-lock"></span>
-                    <p class="desc ml-14">Senha</p>
+                    <p class="desc ml-16">Senha</p>
                 </nuxt-link>
             </div>
-            <div class="hoverbtn w-30 h-13  ml-2 p-4 my-4 hover:bg-[#fff] hover:rounded-l-full  ease-linear duration-400">
+            <div class="hoverbtn w-30 h-13  p-4 my-4 ease-linear duration-500  hover:bg-[#fff] hover:rounded-l-full ">
                 <nuxt-link to="" class="side-item">
                     <span class="gg-log-out"></span>
-                    <p class="desc ml-14">Sair</p>
+                    <p class="desc ml-16">Sair</p>
                 </nuxt-link>
             </div>
         </div>
-        <div class="clear-both"></div>        
-        <button id="btn-sidebar" class="relative duration-700  ease-linear fixed " v-on:click="showMenu()">
+     
+        <button id="btn-sidebar" class="relative duration-700  ease-linear fixed " v-on:click="">
             <img src="svg/burger.svg" alt="" srcset="" class="w-10 h-10 ml-28 my-3">
         </button>
 </section>
    
 </template>
 <style>
-
-.side-expanded {
-    width: 30%;
+#btn-sidebar{
+    display: none;
+}
+#sidebg:hover {
+    width: 20%;
 }
 .side-item {
     display: flex;
     flex-direction: row;    
     width: 100%;
+}
+.sside-item {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    color: #fff;
 }
 .side-item p {
     color: #fff;
@@ -75,16 +83,14 @@
 .hoverbtn:hover p ,.side-item:hover p {
     color: #3D9CF3;
 }
-.side-expanded-button {
-
-    left: 25%;
-}
 
 /* Icons CSS */
 
 /* Icon Lock */
 .gg-lock {
-    margin-left: 5px;
+    margin-top:1px;
+    margin-left: 15px;
+    left:15px;
     box-sizing: border-box;
     position: absolute;
     display: block;
@@ -95,7 +101,6 @@
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     border-bottom: transparent;
-    margin-top: 0px;
     color:#fff;
 }
 .gg-lock::after {
@@ -109,7 +114,7 @@
     border: 2px solid transparent;
     box-shadow: 0 0 0 2px;
     left: -4px;
-    top: 9px
+    top: 10px;
 }
 .hoverbtn:hover .gg-lock{
     color: #3D9CF3;
@@ -180,12 +185,12 @@
 
 /* Icon User  */
 .gg-user {
+    left:34px;
  display: block;
  transform: scale(var(--ggs,1));
  box-sizing: border-box;
  width: 15px;
  height: 21px;
- left:4px;
  color:white;
 }
 
@@ -203,11 +208,11 @@
  height: 11px;
  border-radius: 30px;
  top: 0;
- left: 9px
+ left:15px;
 }
 
 .gg-user::after {
-    left:7px;
+    left:13px;
  width: 15px;
  height: 12px;
  border-bottom: 0;
@@ -223,7 +228,7 @@
 /* Icon Comment */
 
 .gg-comment {
-    margin-left: 3px;
+    left:27px;
  box-sizing: border-box;
  position: absolute;
  display: block;
@@ -272,6 +277,7 @@
 /* Icon Log out  */
 
 .gg-log-out {
+    left:10px;
  box-sizing: border-box;
  position: relative;
  display: block;
@@ -318,16 +324,16 @@
 
 /* Icon Log out End */
 
-
 /* Icons CSS end */
 </style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script>
     export default {
     methods:{
         showMenu(el) {
             
-            document.getElementById('sidebg').classList.toggle('side-expanded');
-            document.getElementById('btn-sidebar').classList.toggle('side-expanded-button');
+            document.getElementById('sidebg').classList.add('side-expanded');
             // document.getElementsByTagName('p').style.display = 'block';
         }
 
@@ -340,6 +346,7 @@
     
 
 }
+
 </script>
 <style>
 
