@@ -49,9 +49,10 @@
     padding-right: 0;
   }
   .reportresponse{
-    width:90%;
+    width:80%;
     padding-left: 2px;
     padding-right: 2px;
+    margin-left: -15px;
   }
 }
 
